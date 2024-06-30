@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- Navbar Section Starts -->
+    <nav class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="logo">VENIA</div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">Women</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Men</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Smart Gear</a></li>
+            <li class="nav-item"><a href="#accessories" class="nav-link">Accessories</a></li>
+        </ul>
+        <div class="cart-icon">
+            <a href="#cart"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </nav>
+    <!-- navbar Section Ends -->
+    
+    <!-- Hero Section Starts -->
+
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>Men's</h1>
+            <h1>Outerwear</h1>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero-header.png" alt="Men's Outerwear">
+        </div>
+    </div>
+
+    <!-- Hero Section Ends -->
+
+    <!-- Products List Section Start -->
+    <div class="container">
+     
+        <div class="results-header">
+            <div class="breadcrumb">
+                <a href="#">Clothing</a> / 
+                <a href="#">Women's</a> / 
+                <a href="#">Outerwear</a>
+            </div>
+
+            <div class="filter-sort-container">
+                <div class="filter-results">
+                    <i class="fas fa-filter"></i> 
+                    <span>Filter Results</span>
+                </div>
+                <div class="sort-products">
+                    <i class="fas fa-sort"></i> 
+                    <span>Sort Products</span>
+                </div>
+            </div>
+            
+            
+            <div class="result-count">
+                <p>0 Results</p> 
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search products...">
+            </div>
+
+            <div class="sort-dropdown">
+                <select id="sort">
+                    <option value="lowToHigh">Sort By Price</option>
+                    <option value="name">Name</option>
+                </select>
+            </div>
+        
+        </div>
+        <div class="content">
+            <div class="filters">
+                <h3>Filters</h3>
+                <div class="filter-category">
+                    <h4>Categories</h4>
+                    <ul id="category-list">
+                   </ul>
+                </div>
+            </div>
+            <div class="products">
+                <div class="shimmer-wrapper" id="shimmer-wrapper">
+                    <div class="shimmer"></div>
+                    <div class="shimmer"></div>
+                    <div class="shimmer"></div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+     
+
+
+    <!-- Products List Section End -->
+    <div id="loader"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
